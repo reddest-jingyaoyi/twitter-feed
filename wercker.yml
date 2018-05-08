@@ -17,8 +17,8 @@ build:
 push-release:
   steps:
     - internal/docker-push:
-        username: $jingyaoyi
-        password: $yiyi1314
+        username: $DOCKER_USERNAME
+        password: $DOCKER_PASSWORD
         repository: $DOCKER_REPO
         registry: $DOCKER_REGISTRY
         tag: $WERCKER_GIT_BRANCH-$WERCKER_GIT_COMMIT
